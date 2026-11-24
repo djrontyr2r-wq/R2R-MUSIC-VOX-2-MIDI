@@ -1,0 +1,25 @@
+name: Build R2R MUSIC VOX 2 MIDI VST3
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'CMakeLists.txt'
+      - 'Source/**'
+      - '.github/workflows/build-vst3.yml'
+jobs:
+  windows-vst3:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Configure x64
+        run: cmake -S . -B build -A x64
+      - name: Build VST3
+        run: cmake --build build --config Release --target R2RMusicVox2MIDI_VST3
+      - name: Upload VST3 plugin
+        uses: actions/upload-artifact@v4
+        with:
+          name: R2R-MUSIC-VOX-2-MIDI-Windows-x64-VST3
+          path: build/R2RMusicVox2MIDI_artefacts/Release/VST3/
+          if-no-files-found: error
+          retention-days: 14
