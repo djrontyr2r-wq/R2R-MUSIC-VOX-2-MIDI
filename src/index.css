@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Chakra Petch', sans-serif;
+    --font-sans: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+
+    --studio-bg: #09070a;
+    --studio-panel: #131015;
+    --studio-well: #0b090d;
+    --studio-border: #2a2129;
+    --studio-accent: #ef233c;
+    --studio-glow-1: rgba(225, 29, 58, 0.16);
+    --studio-glow-2: rgba(154, 52, 18, 0.11);
+  }
+
+  .theme-rzr-crimson {
+    --studio-bg: #09070a;
+    --studio-panel: #141016;
+    --studio-well: #0b090d;
+    --studio-border: #2c2028;
+    --studio-accent: #ef233c;
+    --studio-glow-1: rgba(239, 35, 60, 0.18);
+    --studio-glow-2: rgba(180, 83, 9, 0.10);
+  }
+
+  .theme-bronze-carbon {
+    --studio-bg: #0b0907;
+    --studio-panel: #16120e;
+    --studio-well: #0d0b08;
+    --studio-border: #2e261d;
+    --studio-accent: #f59e0b;
+    --studio-glow-1: rgba(217, 119, 6, 0.15);
+    --studio-glow-2: rgba(185, 28, 28, 0.10);
+  }
+
+  .theme-velvet-indigo {
+    --studio-bg: #08070d;
+    --studio-panel: #12101c;
+    --studio-well: #0a0912;
+    --studio-border: #27223a;
+    --studio-accent: #a855f7;
+    --studio-glow-1: rgba(147, 51, 234, 0.16);
+    --studio-glow-2: rgba(225, 29, 72, 0.10);
+  }
+
+  .theme-obsidian-teal {
+    --studio-bg: #060b0c;
+    --studio-panel: #0e1618;
+    --studio-well: #080e10;
+    --studio-border: #1d2d30;
+    --studio-accent: #06b6d4;
+    --studio-glow-1: rgba(6, 182, 212, 0.15);
+    --studio-glow-2: rgba(16, 185, 129, 0.09);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--studio-bg);
+    color: #f1f5f9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.studio-backdrop {
+  background-color: var(--studio-bg);
+  background-image:
+    radial-gradient(ellipse 80% 45% at 50% -5%, var(--studio-glow-1), transparent 70%),
+    radial-gradient(circle at 88% 82%, var(--studio-glow-2), transparent 55%),
+    radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 24px 24px;
+}
+
+.studio-panel {
+  background-color: var(--studio-panel);
+  border-color: var(--studio-border);
+}
+
+.studio-well {
+  background-color: var(--studio-well);
+  border-color: var(--studio-border);
+}
+
+/* Precision studio scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b090d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e232c;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #473644;
+}

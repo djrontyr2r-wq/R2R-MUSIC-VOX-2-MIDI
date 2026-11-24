@@ -1,0 +1,6 @@
+{
+  "name": "VOX 2 MIDI",
+  "description": "Zero-latency AudioWorklet voice-to-MIDI converter, live pitch quantizer, WebMIDI DAW router, and native VST3 C++ plugin generator.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
