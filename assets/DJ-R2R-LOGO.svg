@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="180" viewBox="0 0 640 180">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70f7ff"/><stop offset=".52" stop-color="#b36bff"/><stop offset="1" stop-color="#ff4fd8"/></linearGradient></defs>
+<rect width="640" height="180" rx="24" fill="#080d18"/>
+<path d="M35 28h12v124H35z" fill="#ff4fd8"/>
+<text x="70" y="105" font-family="Arial,sans-serif" font-size="76" font-weight="900" fill="url(#g)" letter-spacing="2">DJ R2R</text>
+<text x="74" y="139" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#70f7ff" letter-spacing="7">MUSIC PRODUCTION</text>
+<path d="M535 38v104m-18-84h36m-36 64h36" stroke="#70f7ff" stroke-width="5" stroke-linecap="round"/>
+</svg>
